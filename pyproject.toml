@@ -16,6 +16,8 @@ pgcli = "^4.0.1"
 mycli = "^1.27.0"
 psycopg = "^3.1.16"
 psycopg-binary = "^3.1.16"
+psycopg2 = "^2.9.9"
+sqlalchemy = "^2.0.23"
 
 [tool.poetry.dev-dependencies]
 sqlfluff = "^2.3.5"
