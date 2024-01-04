@@ -8,7 +8,7 @@ repos:
       exclude: app/dbt_packages/
       additional_dependencies: ['dbt-bigquery==1.7.2', 'sqlfluff-templater-dbt==2.3.5']
       
-  -   repo: https://github.com/psf/black
+  - repo: https://github.com/psf/black
     rev: 23.12.1
     hooks:
     - id: black
