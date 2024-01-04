@@ -1,0 +1,15 @@
+exclude: ^(.git/|.idea/|__pycache__/|app/dbt_packages)
+
+repos:
+  - repo: https://github.com/sqlfluff/sqlfluff
+    rev: 2.3.5
+    hooks:
+    - id: sqlfluff-fix
+      exclude: app/dbt_packages/
+      additional_dependencies: ['dbt-bigquery==1.7.2', 'sqlfluff-templater-dbt==2.3.5']
+      
+  -   repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+    - id: black
+      language_version: python3.10
